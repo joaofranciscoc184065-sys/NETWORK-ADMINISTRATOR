@@ -37,6 +37,9 @@ A rede é composta por:
 - Testes de conectividade através do comando `ping`
 
 ## 🧪 Testes
+ping 192.168.1.1
+ping 192.168.1.2
+
 
 Foram realizados testes de conectividade entre os dispositivos para verificar a comunicação na rede.
 
