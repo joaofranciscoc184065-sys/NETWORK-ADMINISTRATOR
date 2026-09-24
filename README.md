@@ -1,103 +1,46 @@
-# NETWORK-ADMINISTRATOR
-Portfólio de projetos de Redes de Computadores e Infraestrutura de TI.
-# 🌐 NETWORK ADMINISTRATOR
+# 🌐 Projeto 01 — Rede LAN Básica
 
-## Portfólio de Redes de Computadores e Infraestrutura de TI
+## 📌 Descrição
 
-Olá! Sou João Francisco, estudante e profissional em formação na área de Tecnologias de Informação, com foco em **Redes de Computadores, Infraestrutura e Suporte Técnico**.
+Projeto prático desenvolvido no Cisco Packet Tracer para configurar e testar uma rede LAN básica.
 
-Este repositório apresenta projetos práticos desenvolvidos com **Cisco Packet Tracer**, documentando configurações, testes e soluções de problemas de rede.
+## 🖥️ Topologia
 
----
+A rede é composta por:
 
-## 🛠️ Tecnologias e Ferramentas
+- 3 computadores
+- 1 Switch Cisco
+- 1 Router Cisco
+- Cabos Ethernet
 
-- Cisco Packet Tracer
-- Cisco IOS
-- TCP/IP
-- IPv4
-- VLAN
-- DHCP
-- DNS
-- NAT
-- Routing
-- Switching
-- SSH
-- Troubleshooting
-- Git e GitHub
+## 🌐 Endereçamento IP
 
----
+| Dispositivo | Interface | Endereço IP |
+|---|---|---|
+| Router R1 | G0/0 | 192.168.1.1 |
+| Switch SW1 | VLAN 1 | 192.168.1.2 |
+| PC1 | Ethernet | 192.168.1.10 |
+| PC2 | Ethernet | 192.168.1.11 |
+| PC3 | Ethernet | 192.168.1.12 |
 
-## 📂 Projetos
+**Máscara de rede:** `255.255.255.0`
 
-### 🔹 01 — Rede LAN Básica
-Configuração de uma rede utilizando computadores, switch e router.
+**Gateway:** `192.168.1.1`
 
-**Conceitos:**
-- Endereçamento IPv4
-- Gateway
-- Switch
-- Router
-- Testes de conectividade
+## ⚙️ Configurações realizadas
 
-### 🔹 02 — VLAN
-Segmentação de uma rede através de VLANs.
+- Configuração do endereço IP do router
+- Configuração do endereço IP de gerenciamento do switch
+- Configuração dos computadores
+- Configuração das interfaces Ethernet
+- Verificação do estado das interfaces
+- Testes de conectividade através do comando `ping`
 
-**Conceitos:**
-- VLAN
-- Access Port
-- Trunk
-- Segmentação de rede
+## 🧪 Testes
 
-### 🔹 03 — DHCP
-Configuração de um router Cisco como servidor DHCP.
+Foram realizados testes de conectividade entre os dispositivos para verificar a comunicação na rede.
 
-**Conceitos:**
-- DHCP
-- Pool de endereços
-- Gateway
-- DNS
-- Distribuição automática de IP
+### Comandos utilizados
 
-### 🔹 04 — Routing
-Configuração de comunicação entre diferentes redes.
-
-**Conceitos:**
-- Routing
-- Tabelas de roteamento
-- Redes IPv4
-- Gateway
-
-### 🔹 05 — Segurança de Rede
-Configuração de acesso seguro aos dispositivos de rede.
-
-**Conceitos:**
-- SSH
-- Passwords
-- User authentication
-- Segurança de dispositivos Cisco
-
-### 🔹 06 — Projeto de Rede Empresarial
-Projeto completo de uma infraestrutura de rede empresarial utilizando Cisco Packet Tracer.
-
----
-
-## 🎯 Objetivo
-
-Desenvolver experiência prática em:
-
-- Administração de redes
-- Infraestrutura de TI
-- Suporte técnico
-- Configuração de equipamentos Cisco
-- Troubleshooting
-
----
-
-## 📍 Localização
-
-Angola 🇦🇴
-
-## 💼 Área de interesse
-
-**Network Technician | Network Administrator | IT Support | Junior Network Engineer**
+```bash
+show ip interface brief
